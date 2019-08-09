@@ -1,0 +1,84 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Document</title>
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+         crossorigin="anonymous"
+      />
+   </head>
+   <body>
+      <div class="container">
+          <!-- jumbotron -->
+         <div class="row">
+            <div class="col-12">
+               <div class="jumbotron">
+                  <div class="container">
+                     <h1 class="display-4 text-center">New York Times Search</h1>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- input form -->
+         <div class="row">
+            <div class="col-12">
+                <form>
+                    <!-- search term -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                    <label for="queryTerm">Search Term</label>
+                    <input type="text" class="form-control" id="queryTerm" placeholder="">
+                    </div>
+                </div>
+                <!-- number of records -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                    <label for="length">Number of Records to Retrieve</label>
+                    <select id="length" class="form-control">
+                        <option selected>10</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+                    </div>
+                </div>
+                <!-- start year -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                    <label for="beginYear">Start Year</label>
+                    <input type="number" class="form-control" id="beginYear" placeholder="">
+                </div>
+                </div>
+                <!-- end year -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                    <label for="endYear">End Year</label>
+                    <input type="number" class="form-control" id="endYear" placeholder="">
+                    </div>
+                </div>
+​
+​
+                <button type="submit" class="btn btn-primary" id="submit">Search</button>
+                <button type="submit" class="btn btn-primary" id="clear">Clear Results</button>
+                </form>
+            </div>
+         </div>
+         <!-- search results -->
+         <div id="search-results">
+​
+         </div>
+      </div>
+      <script src="./javascript.js"></script>
+   </body>
+</html>
