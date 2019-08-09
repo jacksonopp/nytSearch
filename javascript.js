@@ -45,8 +45,12 @@ function getNyData(queryTerm, length, beginYear, endYear) {
 }
 
 function floopin(head, date, snippet, url) {
+    const column = document.createElement("div");
+    column.classList.add("card-deck", "col-lg-6", "col-md-12");
+
     const resultDiv = document.createElement("div");
-    resultDiv.classList.add("card");
+    resultDiv.classList.add("card", "mb-4", "border", "border-primary");
+    column.append(resultDiv);
 
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
@@ -72,5 +76,5 @@ function floopin(head, date, snippet, url) {
     resultLink.setAttribute("href", url);
     resultLink.innerText = "View Article";
     cardBody.append(resultLink);
-    document.getElementById("search-results").append(resultDiv);
+    document.getElementById("search-results").append(column);
 }
